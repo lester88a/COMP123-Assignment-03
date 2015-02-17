@@ -6,26 +6,22 @@ using System.Threading.Tasks;
 
 namespace Assignment_03
 {
-    class TerrestrialPlanet
+    class TerrestrialPlanet:Planet
     {
         //Create Private Instance Variables+++++++++++++++++++++++
         private bool _oxygen;
 
         //Create Constructor Mehotd+++++++++++++++++++++++++++++++++
         public TerrestrialPlanet(bool oxygen, string name,
-            double diameter, double mass)
+            double diameter, double mass):base(name,diameter,mass)
         {
             this._oxygen = oxygen;
         }
 
         //Create Public Methods++++++++++++++++++++++++++++++++++++
-        public bool HasMoons()
+        public override bool HasMoons()
         {
-            //Implement the HasMoons Method
-            Planet IHasMoons = new Planet("Mars", 100, 10);
-
-            //If MoonCount >0, return true
-            if (IHasMoons.MoonCount > 0)
+            if (MoonCount > 0)
             {
                 return true;
             }
@@ -35,7 +31,7 @@ namespace Assignment_03
             }
         }
 
-        public bool Habitable()
+        public override bool Habitable()
         {
             //Implement the Habitable Method
             if (this._oxygen == true)
