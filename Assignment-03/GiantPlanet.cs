@@ -22,14 +22,15 @@ namespace Assignment_03
 
         public bool HasMoons()
         {
-            if (MoonCount > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            //if (MoonCount > 0)
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return (MoonCount > 0) ? true : false;
         }
         public bool HasRings()
         {
