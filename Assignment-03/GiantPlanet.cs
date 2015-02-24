@@ -22,7 +22,7 @@ namespace Assignment_03
 
         public bool HasMoons()
         {
-            //if (MoonCount > 0)
+            /////if (MoonCount > 0)
             //{
             //    return true;
             //}
