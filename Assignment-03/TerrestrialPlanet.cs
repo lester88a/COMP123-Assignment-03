@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment_03
 {
-    class TerrestrialPlanet:Planet
+    class TerrestrialPlanet:Planet,IHasMoons,IHabitable
     {
         //Create Private Instance Variables+++++++++++++++++++++++
         private bool _oxygen;
@@ -19,7 +19,7 @@ namespace Assignment_03
         }
 
         //Create Public Methods++++++++++++++++++++++++++++++++++++
-        public override bool HasMoons()
+        public bool HasMoons()
         {
             if (MoonCount > 0)
             {
@@ -31,7 +31,7 @@ namespace Assignment_03
             }
         }
 
-        public override bool Habitable()
+        public bool Habitable()
         {
             //Implement the Habitable Method
             if (this._oxygen == true)

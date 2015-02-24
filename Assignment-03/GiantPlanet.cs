@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment_03
 {
-    class GiantPlanet: Planet
+    class GiantPlanet: Planet,IHasMoons,IHasRings
     {
         //Create Private Instance Variables+++++++++++++++++++++++
         private string _type;
@@ -20,7 +20,7 @@ namespace Assignment_03
 
         //Create Public Methods++++++++++++++++++++++++++++++++++++
 
-        public override bool HasMoons()
+        public bool HasMoons()
         {
             if (MoonCount > 0)
             {
@@ -31,7 +31,7 @@ namespace Assignment_03
                 return false;
             }
         }
-        public override bool HasRings()
+        public bool HasRings()
         {
             if (RingCount > 0)
             {

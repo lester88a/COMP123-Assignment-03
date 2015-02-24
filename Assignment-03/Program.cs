@@ -9,8 +9,8 @@ using System.Threading.Tasks;
  * Section: 062
  * Student Name: LI XU
  * Student ID: 300735072
- * Date Last Modified:Feb.16th, 2015
- * Revision History:1
+ * Date Last Modified:Feb 17, 2015
+ * Revision History:Feb 16, 2015. Feb 17, 2015
  */
 namespace Assignment_03
 {
@@ -29,6 +29,11 @@ namespace Assignment_03
             Console.WriteLine(terrestrialPlanet.ToString());//display
 
             //Wait for any key to exit
+            WaitKey();
+        }
+
+        private static void WaitKey()
+        {
             Console.WriteLine();
             Console.WriteLine("++++++++++++++++++++++++++++++");
             Console.WriteLine("Press any key to exit...");
